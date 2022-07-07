@@ -1,0 +1,190 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+</style>
+
+*{
+	margin: 0;
+	padding: 0; 
+	font-family: 'Open Sans', sans-serif;
+}
+
+html{
+	padding: 5px, 0;
+	margin: 5px 0;
+}
+
+main{
+	padding: 8px 5px 5px 5px;
+	margin: 5px;
+}
+
+h1{
+	background-color: rgba(109, 166, 227, .4);
+	font-size: 28px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: white;
+}
+/*========== INFO DESCUENTOS ==========*/
+
+.comentarioSuperior{
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background-color: rgba(109, 166, 227, .3);
+	font-size: 14px;
+	
+}
+/*========== NAV ==========*/
+
+.bgNav{
+	background-color: rgba(226, 182, 108, .7);
+}
+#botonera div ul li a:hover{
+	color: rgb(150, 116, 57);
+}
+
+#botonera img{
+	width: 130px;
+}
+
+#botonera ul li a{
+	font-size: 18px;
+	color: white;
+}
+
+/*========== PRODUCTOS DESTACADOS ==========*/
+
+.contenedorLooks{
+	background-color: rgba(205, 204, 206, .3);
+	text-align: center;
+}
+.contenedorLooks h2{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.transition:hover{
+	cursor: pointer;
+	width: 150px;
+	border: solid 2px rgba(109, 166, 227, .5);
+}
+
+/*========== FOOTER ==========*/
+
+.contenedorFooter{
+	background-color: rgba(205, 204, 206, .3);
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 20px;
+}
+
+.contenedorFooter h2{
+	color: rgba(150, 116, 57, .6);
+}
+
+.contenedorFooter div img{
+	margin:5px;
+}
+
+.imgFooter{
+	width: 35px;
+}
+
+.imgFooter:hover{
+	cursor: pointer;
+}
+
+.contenedorHeaderNostros{
+	padding:30px 10px 30px 10px;
+	margin:30px 10px 30px 10px;
+}
+
+
+.contenedorContacto{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.transform:hover{
+	transform: translateY(-10px);
+}
+
+@media (min-width: 768px){
+	.contenedorFooter{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		
+	}
+	.contenedorFooter div{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+}
+
+}
+
+/*========== MUJERES ==========*/
+.tabla{
+	background-color: rgba(109, 166, 227, .5);
+	color: white;
+	margin: 25px;
+	font-size: 1rem;
+	line-height: 1.6em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.contenedormujeres{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"botonera"
+	"header"
+	"filtros"
+	"productosmujeres"
+	"footer"
+}
+
+#botonera{
+	grid-area: botonera;
+}
+#header{
+	grid-area: header;
+}
+#filtros{
+	grid-area: filtros;
+}
+#productosmujeres{
+	grid-area: productosmujeres;
+}
+#footer{
+	grid-area: footer;
+}
+
+@media (min-width: 768px){
+	.contenedormujeres{
+		grid-template-columns: 30vw 70vw;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: 
+		"botonera botonera"
+		"header header"
+		"filtros productosmujeres"
+		"footer footer";
+	}
+
+
